@@ -254,31 +254,3 @@ export default {
   createUsuario,
   updateUsuario,
 };
-
-/*
-
-
-
-
-
-
-const findUsuarioByUid = (uid, cb) => {
-  usersDAO.findOneByFilter({ uid: uid }, (error, usuario) => {
-    if (error) {
-      cb(error, null);
-    } else {
-      cb(null, usuario);
-    }
-  });
-};
-
-
-
-module.exports = {
-  findUserByEmail,
-  createUsuario,
-  updateUsuario,
-  updateUsuarioByIdUsuario,
-  findUsuarioByUid,
-  countUsuariosByIdTaller
-};*/

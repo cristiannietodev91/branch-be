@@ -1,15 +1,26 @@
 {
   "name": "branch",
   "version": "1.0.0",
-  "description": "Backend Services Proyecto Branch",
+  "description": "Backend Services Branch project",
   "author": "Cristian Nieto (cristianandresnieto@gmail.com)",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www",
-    "dev": "nodemon ./bin/www",
-    "build": "tsc --project ./",
+    "prestart": "npm run build",
+    "start": "node ./dist/src",
+    "dev": "npm run build && nodemon",
+    "build": "tsc",
     "test": "npm run build && cross-env NODE_ENV=test nyc mocha",
     "coverage": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "src"
+    ],
+    "ext": "ts, html",
+    "ignore": [
+      "src/public"
+    ],
+    "exec": "npm run start"
   },
   "engines": {
     "node": ">10.16.0"
@@ -34,7 +45,7 @@
     "nodemon": "^2.0.2",
     "sequelize": "^6.6.5",
     "sequelize-paginate": "^1.1.6",
-    "socket.io": "^2.3.0",
+    "socket.io": "4.4.1",
     "twilio": "^3.39.3"
   },
   "devDependencies": {
