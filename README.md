@@ -20,9 +20,13 @@
     DBPASSWORD=root
     DBUSER=root``
 - run ``npm install`` command to install all project neccesary dependencies
-- create an database called ``branch`` and then run ``npx sequelize-cli db:migrate`` to run migrations
+- create an database called ``branch``
 
-- run the project with ``DEBUG=branch:* npm run dev``
+### Run migrations
+- run ``npx sequelize-cli db:migrate`` to run migrations
+
+## Undo migrations
+- run ``npx sequelize-cli db:migrate:undo``
 
 ## Runing project locally
 
