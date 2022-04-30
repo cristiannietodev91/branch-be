@@ -12,14 +12,14 @@
 
 ### firsts step to set the project
 
-- Set SSH Key in bitbucket for your user
-- Download the repo from bitbucket
+- Set SSH Key in git for your user
+- Download the project from the repo
 - Set .env file with the next values to local environment
     ``DBNAME=branch
     DBHOST=localhost
     DBPASSWORD=root
     DBUSER=root``
-- run ``npm install`` command to install all project neccesary dependencies
+- run ``yarn install`` command to install all project neccesary dependencies
 - create an database called ``branch``
 
 ### Run migrations
