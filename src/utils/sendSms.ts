@@ -12,8 +12,8 @@ import {
 import moment from "moment";
 const debug = Debug("branch:server");
 
-const accountSid = process.env.TWILIO_ACCOUNT_ID;
-const authToken = process.env.TWILIO_AUTH_TOKEN;
+const accountSid = process.env.TWILIO_ACCOUNT_ID || "AC1111";
+const authToken = process.env.TWILIO_AUTH_TOKEN || "111";
 const client = twilio(accountSid, authToken);
 
 /**
