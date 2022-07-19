@@ -1,6 +1,6 @@
 # branch
 
-[![Coverage Status](https://coveralls.io/repos/bitbucket/branchmotor/branch/badge.svg?branch=feature/add-unit-testing)](https://coveralls.io/bitbucket/branchmotor/branch?branch=feature/add-unit-testing)
+[![Coverage Status](https://coveralls.io/repos/github/cristiannietodev91/branch-be/badge.svg?branch=master)](https://coveralls.io/github/cristiannietodev91/branch-be?branch=master)
 
 ## Dev environment
 
